@@ -1,0 +1,97 @@
+html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #e1e1e1;
+}
+
+select {
+  padding: 0 4px;
+}
+
+input {
+  padding: 0 8px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#dice-template {
+  display: none;
+}
+
+#dices-list {
+  margin: 20px 0;
+}
+
+#dices-list > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #333;
+  color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0070a3;
+}
+
+.list-button {
+  padding: 10px;
+  line-height: 100%;
+}
+
+.dice {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr 1fr 25px;
+  grid-template-rows: 25px;
+  gap: 10px;
+}
+
+#results {
+  height: 300px;
+}
+
+#list {
+  height: 100%;
+  overflow-y: auto;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+#list > li {
+  padding: 5px 10px;
+}
+
+#list > li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+#list > li:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.underline {
+  border-bottom: 1px solid #adadad;
+  padding-bottom: 20px;
+}
+
+[disabled] {
+  background-color: #e1e1e1;
+}
+
+input[type='number']:not([disabled])::-webkit-inner-spin-button,
+input[type='number']:not([disabled])::-webkit-outer-spin-button {
+  opacity: 1;
+}

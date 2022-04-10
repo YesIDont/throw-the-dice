@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rzucający kości</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div>
+        <h3 class="underline">Ustawienia rzutu</h3>
+        <ul id="dices-list">
+          <li class="dice">
+            <span>Ilość</span>
+            <span>Typ kości</span>
+            <span>Ilość ścian</span>
+            <span>Modyfikator</span>
+            <button type="button" id="add-dice" class="button list-button">
+              +
+            </button>
+          </li>
+        </ul>
+        <button type="button" id="throw" class="button">Rzuć</button>
+      </div>
+      <div id="results">
+        <h3>Wyniki</h3>
+        <ul id="list"></ul>
+        <button type="button" id="clear" class="button">Wyczyść</button>
+      </div>
+    </div>
+
+    <li id="dice-template">
+      <form action="" class="dice">
+        <input type="number" name="count" class="count" value="1" />
+        <select name="dice" class="dice-type">
+          <option value="4">k4</option>
+          <option value="6">k6</option>
+          <option value="8">k8</option>
+          <option value="10">k10</option>
+          <option value="12">k12</option>
+          <option value="20">k20</option>
+          <option value="100">k100</option>
+          <option value="custom">Własna</option>
+        </select>
+        <input
+          type="number"
+          name="modifier"
+          class="sides-count"
+          disabled
+          value="4"
+        />
+        <input type="number" name="modifier" class="modifier" value="0" />
+        <button type="button" class="button list-button remove">-</button>
+      </form>
+    </li>
+
+    <script src="index.js"></script>
+  </body>
+</html>
