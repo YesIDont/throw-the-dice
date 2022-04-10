@@ -54,7 +54,7 @@ h3 {
 
 .dice {
   display: grid;
-  grid-template-columns: 70px 1fr 1fr 1fr 25px;
+  grid-template-columns: 70px 1fr 80px 1fr 25px;
   grid-template-rows: 25px;
   gap: 10px;
 }
